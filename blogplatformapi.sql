@@ -1,0 +1,9 @@
+CREATE TABLE posts (
+	id SERIAL PRIMARY KEY,
+	title TEXT NOT NULL,
+	context TEXT NOT NULL,
+	category TEXT NOT NULL,
+	tags JSONB,
+	created_at TIMESTAMP DEFAULT NOW(),
+	updated_at TIMESTAMP DEFAULT NOW()
+);
